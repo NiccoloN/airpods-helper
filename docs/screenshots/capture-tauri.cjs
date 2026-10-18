@@ -67,7 +67,7 @@ function bridge(page) {
 
 async function capture(page) {
   const width = page === "tray" ? 80 : 480;
-  const height = page === "tray" ? 80 : page === "devices" ? 920 : 820;
+  const height = page === "tray" ? 80 : page === "equalizer" ? 980 : page === "devices" ? 920 : 820;
   const profile = path.join(temporary, `profile-${page}`);
   fs.mkdirSync(profile);
   fs.writeFileSync(path.join(profile, "user.js"), 'user_pref("ui.systemUsesDarkTheme", 1);\n');
