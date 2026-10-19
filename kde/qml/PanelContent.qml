@@ -329,11 +329,6 @@ Controls.Pane {
                                             }
                                         }
                                     }
-                                    Controls.Label {
-                                        visible: batteryCard.charge < 0
-                                        text: qsTr("Not reported")
-                                        color: Qt.alpha(Kirigami.Theme.textColor, 0.6)
-                                    }
                                 }
                             }
                         }
